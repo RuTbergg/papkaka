@@ -7,8 +7,8 @@ def tableprint(dicts):
         print("{:<3} {:<15} {:<6} {:<10} {:<10} {:<9}".format(num, task, time, date, status, result))
 
 task = str(input('Введите название блокнота, с которым хотите работать: '))
-if task == 'notebook1.csv':
-    with open ('notebook1.csv', 'r', encoding='utf-8') as f:
+if task == 'notebook1':
+    with open ('notebook1', 'r', encoding='utf-8') as f:
         for i in f:
             num = int(i.split(',')[0])
             task = i.split(',')[1]
